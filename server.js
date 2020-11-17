@@ -12,6 +12,7 @@ const db = mysql.createConnection({
   database: "trishffe_prodigy_db"
 });
 
+app.use(allowCrossDomain);
 app.use(cors());
 app.use(express.json());
 
